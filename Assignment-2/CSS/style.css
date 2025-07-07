@@ -22,19 +22,19 @@ a {
 
 /* Navbar */
 .navBar {
-  background: #fff;
-  border-bottom: 1px solid #eee;
+  width: 100%;
 
+  background: #fff;
+  border-bottom: #fff;
 }
 
 
 .navContainer {
-  max-width: 1200px;
+  /* max-width: 1200px; */
   margin: 0 auto;
-  padding: 20px;
+  padding:20px;
   display: flex;
   justify-content: space-between;
-  align-items: center;
 }
 
 .logo {
@@ -46,44 +46,57 @@ a {
     color: #c9103b;
 }
 
-.navLinks {
-    font-size: 20px;
-    justify-content: space-between;
-}
-.navLinks a {
-  margin-left: 20px;
+.navLink {
   font-weight: 500;
-  color: #21243D;
-  
+  font-size: 20px;
+  display: flex;
+  gap: 20px;
+  /* justify-content: space-between; */
 }
 
+.navLink a:hover {
+  color: #c9103b;
+
+}
 .introSection {
   display: flex;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
   align-items: center;
   margin-bottom: 40px;
 }
 
-/* .introSection h1{
+.introSection h1{
     size: 44px;
     font-weight: 700;
-    line-height: 60px;
-} */
+}
 
 .introText {
   flex: 1;
   margin-bottom: 20px;
+  width: 60%;
+
+
 }
 .introText h1{
+    font-size: 44px;
     margin-bottom: 20px;
-    font-size: 20pxx;
+}
+
+.introImage {
+  width:40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 243px;
+  height: 243px;
 }
 
 .introImage img {
   border-radius: 50%;
-  width: 250px;
-  height: 250px;
-/* do alignment  */
+  width:100%;
+  height:100%;
+  object-fit: cover;
+/* did alignment  */
 }
 
 /* Button */
@@ -92,7 +105,6 @@ a {
   background: #ff6464;
   color: #fff;
   padding: 10px 20px;
-  border-radius: 6px;
   margin-top: 20px;
 }
 .downloadBtn:hover {
@@ -102,11 +114,12 @@ a {
 
 /* Recent posts */
 .recentPosts {
+  padding: 0%;
+  margin: 0%;
   background: #EDF7FA;
   padding: 40px 30px;
-  width: inherit; 
+  width: 100%; 
   /* all: unset; */
-
   margin-bottom: 40px;
 }
 
@@ -126,9 +139,7 @@ a {
     font-size: 16px;
     color: #00A8CC;
 }
-.sectionHeader a :hover{
-    color: #050091c7;   
-}
+
 .postsGrid {
   display: flex;
   gap: 20px;
@@ -142,7 +153,9 @@ a {
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0,0,0,0.05);
   margin-bottom: 20px;
-}
+} 
+
+
 
 /* Featured works */
 .featuredWorks {
@@ -247,3 +260,6 @@ footer {
     width: 100%;
   }
 }
+
+/* if needed min. height - in the worst case */
+/* full space to the both cards */
