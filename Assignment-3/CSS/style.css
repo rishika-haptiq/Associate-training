@@ -64,7 +64,7 @@ body {
   color: #fff;
 }
 .logo:hover{
-    color: #c9103b;
+    color: #6C00FF;
 }
 
 
@@ -112,7 +112,7 @@ body {
 /* second page */
 
 .services {
-  padding: 100px 0;
+  padding: 30px;
   background-color: #fff;
 }
 
@@ -232,29 +232,31 @@ body {
 }
 
 .featureText ul li::before {
-  content: "✔";
+  content: url(/images/check.png);
   position: absolute;
   left: 0;
   color: #6C00FF;
 }
 
 .featureImage {
-  flex: 1;
+  /* flex: 1; */
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.imageFrame {
+.imageFrameLeft {
   box-shadow: 20px 20px #6C00FF ;
-  /* padding: 8px; */
   
 }
+.imageFrameRight{
+  box-shadow: -20px -20px #6C00FF;
+}
 
-.imageFrame img {
+/* .imageFrame img {
   max-width: 100%;
   display: block;
-}
+} */
 
 
 
