@@ -99,8 +99,142 @@ body {
 
 /* second page */
 
+.services {
+  padding: 100px 0;
+  background-color: #fff;
+}
+
+.innerServices {
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+.sectionLabel {
+  color: #6C00FF;
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: 2px;
+  margin-bottom: 8px;
+}
+
+.sectionHeading {
+  font-size: 36px;
+  font-weight: 700;
+  color: #21243d;
+  margin-bottom: 60px;
+}
+
+.serviceCards {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+.serviceCard {
+  width: 100%;
+  justify-content: space-evenly;
+  padding: 20px;
+  background-color: #f9f9f9;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.serviceCard h3 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #21243d;
+  margin-bottom: 12px;
+}
+
+.serviceCard p {
+  font-size: 14px;
+  color: #666;
+}
+
+.serviceIcon {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 16px;
+}
+
+
 
 /* Feature */
+ .serviceFeature {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+  margin-bottom: 60px;
+}
+
+.serviceFeature.reverse {
+  flex-direction: row-reverse;
+}
+
+.featureText {
+  flex: 1;
+}
+
+.featureText h5 {
+  font-size: 14px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: #6C00FF;
+  margin-bottom: 10px;
+}
+
+.featureText h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  color: #21243d;
+}
+
+.featureText p {
+  font-size: 16px;
+  margin-bottom: 16px;
+  color: #444;
+}
+
+.featureText ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.featureText ul li {
+  position: relative;
+  padding-left: 24px;
+  margin-bottom: 10px;
+}
+
+.featureText ul li::before {
+  content: "✔";
+  position: absolute;
+  left: 0;
+  color: #6C00FF;
+}
+
+.featureImage {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.imageFrame {
+  box-shadow: 20px 20px #6C00FF ;
+  /* color: #6C00FF; */
+  /* border: 12px solid #6C00FF; */
+  padding: 8px;
+  background-color: white;
+  
+}
+
+.imageFrame img {
+  max-width: 100%;
+  display: block;
+}
 
 
 
@@ -110,6 +244,8 @@ body {
   background-color: #dcdde5;
   padding: 40px 0;
   color: #fff;
+  align-items: center;
+  justify-content: center;
 }
 
 .footerContent {
@@ -132,4 +268,7 @@ body {
 .footerLinks a:hover {
   color: #c9103b;
 }
+
+
+
 
