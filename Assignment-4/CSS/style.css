@@ -21,7 +21,8 @@ body {
 }
 
 .navBar img:hover {
-    color: #23A6F0;
+    transform: scale(1.3);
+    transition-duration: 1s;    
 }
 
 .navLink { 
@@ -54,8 +55,10 @@ body {
     color: #fff;
     text-decoration: none;
     padding: 10px 20px;
+    border-radius: 5px;
 
 }
+
 
 .navBtn a.active{
     margin: 0 auto;
@@ -317,7 +320,7 @@ body {
   font-size: 14px;
   font-weight: 700;
   display: inline-block;
-  background-color: #007bff;
+  background-color: #23A6F0;
   color: white;
   padding: 10px 20px;
   text-decoration: none;
@@ -329,6 +332,16 @@ body {
   background-color: #0056b3;
 }
 
+.cInfo h5{
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.cInfo a {
+    font-size: 14px;
+    font-weight: 600;
+    color: #fff;
+}
 
 /* footer */
 .footer {
@@ -350,9 +363,15 @@ body {
 }
 
 
+
 .cInfo h5{
     margin-bottom: 20px;
 }
+
+/* 
+.getInTouch a{
+    content: url(/Images/phoneIcon.png);
+} */
 
 .footerBottom {
     display: flex;
@@ -373,7 +392,6 @@ body {
     gap: 20px;
 
 }
-
-.fIcon a:hover{
-    color: #252B42;
+.fIcon a:hover {
+    transform: scale(1.5);
 }
