@@ -127,6 +127,7 @@ body {
     gap: 30px;
     margin-bottom: 40px;
 
+
 }
 
 
@@ -142,6 +143,14 @@ body {
 
 .bannerBtn a.active{
     background-color: #23A6F0;
+
+}
+
+.bannerBtn .learnMore {
+    border-radius: 25px;
+    border: 1px solid #fff;
+
+
 
 }
 
@@ -243,9 +252,15 @@ body {
 }
 
 .designer1 {
-    width:40%;
+    position: relative;
+    width:30%;
     background-color: #fff;
-    padding: 20px;
+    padding: 40px;
+}
+
+.designerImage {
+    position: absolute;
+    left: -40px;
 }
 
 
