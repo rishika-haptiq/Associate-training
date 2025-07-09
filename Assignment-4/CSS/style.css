@@ -20,6 +20,13 @@ body {
 
 }
 
+.right {
+    display: flex;
+    justify-content: space-between;
+    flex: 1;
+    align-items: center;
+}
+
 .navBar img:hover {
     transform: scale(1.3);
     transition-duration: 1s;    
@@ -30,7 +37,6 @@ body {
     gap: 20px;
     font-size: 14px;
     font-weight: 600;
-     /* padding: 10px 20px; */
 
 }
 
@@ -66,6 +72,10 @@ body {
     background-color: #23A6F0;
 }
 
+.navBtn a:hover{
+    background-color: #0056b3;
+
+}
 
 .navMain {
   max-width: 1200px;
@@ -73,6 +83,8 @@ body {
   margin: 0 auto;
   padding:20px;
   display: flex;
+  align-items: center;
+  gap: 40px;
   justify-content: space-between;
 }
 
@@ -82,6 +94,7 @@ body {
 .container {
     max-width: 1200px;
     margin: 0 auto;
+    padding: 0 20px;
 
 }
 
@@ -103,6 +116,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
+    margin-bottom: 40px;
 }
 .innerBanner h1  {
     font-size: 58px;
@@ -141,10 +155,16 @@ body {
 
 }
 
+.bannerBtn a:hover {
+    background-color: #0056b3;
+
+}
+
 .bannerBtn a.active{
     background-color: #23A6F0;
 
 }
+
 
 .bannerBtn .learnMore {
     border-radius: 25px;
@@ -171,6 +191,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+    gap: 30px;
 
 }
 
@@ -281,8 +302,8 @@ body {
 }
 
 .imageCards {
-  width: inherit;
   display: flex;
+  /* flex-wrap: wrap; */
   gap: 20px;
   /* justify-content: space-between; */
   max-width: 100%;
@@ -306,9 +327,10 @@ body {
 
 
 .cardInfo {
-    bottom: 0;
-    left: 0;
- padding: 18px;
+    
+  bottom: 0;
+  left: 0;
+  padding: 18px;
   position: absolute;
   color: #fff;  
   background: linear-gradient(180deg, rgba(0, 0, 0, 0) 14.58%, rgba(56, 56, 56, 0.84) 100%);
@@ -365,7 +387,9 @@ body {
 
 .footerLinks {
     color: #fff;
-    columns: auto 5;
+    /* columns: auto 5; */
+    display: flex;
+    justify-content: space-between;
     margin-bottom: 30px;
     padding: 40px 20px;
     
@@ -377,16 +401,19 @@ body {
 
 }
 
+.cInfo .link {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
 
 
 .cInfo h5{
     margin-bottom: 20px;
 }
 
-/* 
-.getInTouch a{
-    content: url(/Images/phoneIcon.png);
-} */
+
 
 .footerBottom {
     display: flex;
@@ -410,3 +437,6 @@ body {
 .fIcon a:hover {
     transform: scale(1.5);
 }
+
+
+/* bg imagr : cover property */
