@@ -17,7 +17,8 @@ a {
 
 .mainContainer {
   max-width: 1200px;
-  margin: 125px;
+  /* margin: 125px; */
+
 }
 
 /* Navbar */
@@ -114,13 +115,13 @@ a {
 
 /* Recent posts */
 .recentPosts {
-  padding: 0%;
-  margin: 0%;
-  background: #EDF7FA;
+  background-color: #EDF7FA;
   padding: 40px 30px;
-  width: 100%; 
+  /* width: 100% !important; */
+  /* position:absolute; */
   /* all: unset; */
   margin-bottom: 40px;
+  /* max-width: 1200px !important; */
 }
 
 .sectionHeader {
@@ -232,7 +233,7 @@ footer {
 }
 
 /* Responsive */
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
   .introSection {
     flex-direction: column;
     align-items: flex-start;
@@ -259,7 +260,13 @@ footer {
   .workItem img {
     width: 100%;
   }
-}
+} */
 
 /* if needed min. height - in the worst case */
 /* full space to the both cards */
+
+
+
+
+/* banner -ve marginfeature 1 2 in same class 
+reverse class */

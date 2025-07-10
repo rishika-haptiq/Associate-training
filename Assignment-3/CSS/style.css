@@ -85,6 +85,17 @@ body {
 
 }
 
+.innerServices h4{
+font-size: 14px;
+letter-spacing: 5px;
+}
+
+.innerServices h2 {
+  font-size: 36px;
+  font-weight: 500px;
+
+}
+
 .innerBanner {
     color: #fff;
     height: 100%;
@@ -92,7 +103,6 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /* border: 2px solid #fff; */
 }
 
 .innerBanner h1  {
@@ -206,6 +216,7 @@ body {
   text-transform: uppercase;
   color: #6C00FF;
   margin-bottom: 10px;
+
 }
 
 .featureText h2 {
@@ -298,6 +309,7 @@ margin: 128px 0;
   color: #393E46;
   text-align: center;
 }
+
 .footerLinks a:hover {
   color: #6C00FF;
 }

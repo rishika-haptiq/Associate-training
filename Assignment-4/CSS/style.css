@@ -9,6 +9,13 @@ body {
     color: #21243D;
 }
 
+
+.hamburger {
+  display: none;
+  font-size: 30px;
+  cursor: pointer;
+}
+
 .navBar {
   justify-content: space-evenly;
   text-decoration: none;
@@ -439,4 +446,186 @@ body {
 }
 
 
-/* bg imagr : cover property */
+
+/* Media Queries for Responsive Design  */
+
+/* Mobile Devices (max-width: 768px) */
+@media (max-width: 768px) {
+
+  .navMain,
+  .container,
+  .banner,
+  .innerBanner,
+  .bannerBtn,
+  .pageTwo,
+  .pageThree,
+  .pageFour,
+  .footer,
+  .footerLinks,
+  .footerBottom {
+    padding: 15px !important;
+  }
+
+
+  .navBar{
+    display: none;
+  }
+
+  .logoImg{
+    display: block;
+  }
+  /* .navLink,
+  .navBtn {
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-start;
+  } */
+
+  /* .navMain,
+  .right {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  } */
+
+.innerBanner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .innerBanner h1 {
+    font-size: 40px;
+    font-weight: 700;
+    text-align: center;
+  }
+
+  .innerBanner p {
+    font-size: 16px;
+    text-align: center;
+  }
+
+  .bannerBtn {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .innerCards,
+  .testimonialText,
+  .imageCards,
+  .footerLinks,
+  .footerBottom {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .footerLinks h5{
+    font-size: 16px;
+    font-weight: 700;
+
+
+  }
+  .designer1 {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .designer1 img {
+    display: none;
+  }
+
+  .pageThree {
+    padding: 60px 15px;
+  }
+
+  .pageFour {
+    padding: 60px 15px;
+  }
+
+  .card1 {
+    width: 100%;
+    height: auto;
+  }
+
+  .cardInfo {
+    padding: 12px;
+  }
+}
+
+/* Tablet Devices (min-width: 769px) and (max-width: 1024px) */
+@media (min-width: 769px) and (max-width: 1024px) {
+
+  .navMain,
+  .container,
+  .banner,
+  .innerBanner,
+  .pageTwo,
+  .pageThree,
+  .pageFour,
+  .footer,
+  .footerLinks,
+  .footerBottom {
+    padding: 20px !important;
+  }
+
+  /* .innerBanner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  } */
+
+  .navMain {
+    flex-direction: row;
+    gap: 20px;
+  }
+
+  .navBtn {
+    gap: 20px;
+  }
+
+  .innerBanner h1 {
+    font-size: 40px;
+  }
+
+  .innerBanner p {
+    font-size: 18px;
+  }
+
+  .bannerBtn {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+
+  .innerCards,
+  .testimonialText,
+  .imageCards,
+  .footerLinks,
+  .footerBottom {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .designer1 {
+    width: 100%;
+    padding: 30px;
+  }
+
+  .pageThree {
+    padding: 100px 20px;
+  }
+
+  .pageFour {
+    padding: 100px 20px;
+  }
+
+  .card1 {
+    width: 100%;
+    height: auto;
+  }
+
+  .cardInfo {
+    padding: 15px;
+  }
+}
+
