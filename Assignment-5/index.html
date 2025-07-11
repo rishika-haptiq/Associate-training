@@ -14,7 +14,7 @@
   </head>
   <body>
     <header class="navBar">
-      <div class="navContainer">
+      <div class="navHeader">
         <a href="#" class="logo">Rishika</a>
         <nav class="navLink">
           <a href="#">Works</a>
@@ -24,15 +24,17 @@
       </div>
     </header>
 
-    <main class="mainContainer">
+    <main>
+
       <section class="introSection">
+        <div class="container introItems">
         <div class="introText">
           <h1>Hi, I am John,<br />Creative Technologist</h1>
           <p>
             Amet minim mollit non deserunt ullamco est sit aliqua dolor do
-            amet<br />
+            amet
             sint. Velit officia consequat duis enim velit mollit. Exercitation
-            veniam <br />
+            veniam 
             consequat sunt nostrud amet.
           </p>
           <a href="#" class="downloadBtn">Download Resume</a>
@@ -40,9 +42,12 @@
         <div class="introImage">
           <img src="images/MainImage.png" alt="Profile Photo" />
         </div>
+        </div>
+        
       </section>
-
       <section class="recentPosts">
+        <div class="container">
+
         <div class="sectionHeader">
           <h2>Recent posts</h2>
           <a href="#">View all</a>
@@ -51,7 +56,8 @@
           <div class="postsGrid">
             <div class="postCard">
               <h3>Making a design system from scratch</h3>
-              <small>12 Feb 2020 &nbsp; | &nbsp; Design, Pattern</small>
+              <div class="postYear">
+              <small>12 Feb 2020 &nbsp; | &nbsp; Design, Pattern</small></div>
               <p>
                 Amet minim mollit non deserunt ullamco est sit aliqua dolor do
                 amet sint. Velit officia consequat duis enim velit mollit.
@@ -71,15 +77,17 @@
             </div>
           </div>
         </div>
+      </div>
       </section>
 
       <section class="featuredWorks">
-        <h2>Featured works</h2>
+        <div class="container">
+        <h3>Featured works</h3>
 
         <a href="#" class="workItem">
           <img src="images/Rectangle 30.png" alt="Designing Dashboards" />
           <div class="workContent">
-            <h3>Designing Dashboards</h3>
+            <h4>Designing Dashboards</h4>
             <div class="workMeta">
               <span class="workYear">2020</span> Dashboard
             </div>
@@ -94,7 +102,7 @@
         <a href="#" class="workItem">
           <img src="images/Rectangle 32.png" alt="Vibrant Portraits" />
           <div class="workContent">
-            <h3>Vibrant Portraits of 2020</h3>
+            <h4>Vibrant Portraits of 2020</h4>
             <div class="workMeta">
               <span class="workYear">2018</span> Illustration
             </div>
@@ -109,7 +117,7 @@
         <a href="#" class="workItem">
           <img src="images/Rectangle 34.png" alt="Malayalam Typography" />
           <div class="workContent">
-            <h3>36 Days of Malayalam type</h3>
+            <h4>36 Days of Malayalam type</h4>
             <div class="workMeta">
               <span class="workYear">2018</span> Typography
             </div>
@@ -120,6 +128,7 @@
             </p>
           </div>
         </a>
+      </div>
       </section>
     </main>
 
