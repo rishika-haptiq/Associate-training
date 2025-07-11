@@ -51,7 +51,6 @@ a {
   display: flex;
  justify-content: end;
  gap: 20px;
-  /* justify-content: space-between; */
 }
 
 .navLink a:hover {
@@ -119,7 +118,6 @@ a {
   background-color: #EDF7FA;
   padding: 40px 0;
   margin-bottom: 40px;
-  /* max-width: 1200px !important; */
 }
 
 .sectionHeader {
@@ -129,7 +127,7 @@ a {
   margin-bottom: 20px;
 }
 
-.sectionHeader h2{
+.recentPosts h2{
     font-weight: 400;
     font-size: 22px;
     color: #21243D;
@@ -161,6 +159,8 @@ a {
 .postCard .postYear{
   margin-bottom: 11px;
 }
+
+
 /* Featured works */
 .featuredWorks {
   margin-bottom: 40px;
@@ -170,7 +170,7 @@ a {
     font-weight: 400;
     font-size: 22px;
     color: #21243D;
-    margin-bottom: 20px;
+    margin-bottom: 22px;
 }
 
 .workItem {
@@ -185,14 +185,14 @@ a {
   background: #73cce5;
 }
 
-.workItem img {
-  width: 150px;
-  height: auto;
+.featuredWorks img {
+  width: 246px;
+  height: 180;
   border-radius: 4px;
 }
 
 .workContent h4 {
-  font-size: 30px;
+  font-size: 24px;
   font-weight: 700;
   margin-bottom: 10px;
 }
@@ -244,16 +244,14 @@ footer {
   .container {
   max-width: 767px;
 }
-  .navContainer {
-    flex-direction: column;
-    align-items: center;
+  /* .navContainer {
     gap: 10px;
-  }
+  } */
 
   .navLink {
-    flex-direction: column;
     gap: 10px;
-    font-size: 18px;
+    font-size: 12px;
+    font-weight: 400;
   }
 
 
@@ -279,6 +277,13 @@ footer {
   .introText h1 {
     font-size: 32px;
     font-weight: 700;
+    margin-bottom: 21px;
+  }
+
+  .introText p{
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 27px;
   }
 
 
@@ -290,17 +295,16 @@ footer {
 
   
 
-.recentPosts .sectionHeader h2{
+.recentPosts h2{
     font-size: 16px;
     font-weight: 400;
 justify-content: center;  }
 
-
- h2{
-    font-size: 16px;
-    font-weight: 400;
-    text-align: center;
-  }
+.recentPosts h3{
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
 
 
   .postsGrid {
@@ -311,20 +315,21 @@ justify-content: center;  }
     flex: 1 1 100%;
   }
 
-  .postCard h3 {
-    font-size: 22px;
-    font-weight: 700;
-  }
-
   .workItem {
     flex-direction: column;
     align-items: center;
   }
 
-  .workItem img {
+
+  .featuredWorks img {
     width: 100%;
     width: 339px;
     height: 230px;
+  }
+
+  .featuredWorks h3 {
+    font-size: 18px;
+    font-weight: 400;
   }
 
 
