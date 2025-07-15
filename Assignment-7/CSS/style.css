@@ -1,0 +1,284 @@
+ /* Custom CSS Variables for Brand Colors */
+:root {
+  --brand-green: #74C69D;
+  --text-muted: #21252980;
+  --text-dark: #212529BF;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Crimson Text", serif;
+    line-height: 1.6;
+    color: black;
+    padding-top: 76px;
+}
+
+
+
+h1, h2, h3 {
+    font-weight: 700;
+    font-family: "Crimson Text", sans-serif;
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+h4 {
+    font-size: 24px;
+    font-weight: 700;
+    color: #000;
+}
+
+h5 {
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 16px;
+    font-family: 'Work Sans', sans-serif;
+    color: var(--brand-green);
+    letter-spacing: 5px;
+} 
+
+h6 {
+    font-family: 'Work Sans', sans-serif;
+
+
+}
+
+p {
+    font-family: "Work Sans", sans-serif;
+    color: var(--text-muted);
+    font-size: 15px;
+    margin-bottom: 15px;
+}
+
+a {
+    font-family: "Work Sans", sans-serif;
+    text-decoration: none;
+    color: #000;
+}
+
+/* Nav bar */
+
+.navbar {
+ background-color: var(--brand-green);
+    font-family: 'Work Sans', sans-serif;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.navbar-nav .nav-link {
+    font-size: 16px;
+    font-weight: 400;
+    color: #fff;
+    margin: 0 10px;
+}
+
+.navbar-nav .nav-link:hover {
+    color: var(--brand-green);
+
+}
+
+
+/* banner  */
+
+
+.banner {
+    background-color: var(--brand-green);
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: -76px; 
+    padding-top: 76px; 
+}
+
+
+.banner .welcome {
+    font-family: 'Work Sans', sans-serif;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 16px;
+    color: #fff ;
+    /* background-color: transparent; */
+}
+
+
+.banner h1 {
+    font-size: 48px;
+    line-height: 1.2;
+}
+
+.banner p {
+    font-size: 18px;
+    font-weight: 400;
+    color: #fff;
+    margin-bottom: 26px;
+}
+
+.banner .btn {
+    font-family: "Work Sans", sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 12px 40px;
+    border-radius: 5px;
+    color: #000;
+    background-color: #fff;
+    border: 2px solid #fff;
+}
+
+.banner .btn:hover {
+    background-color: transparent;
+    color: #fff;
+    border-color: #fff;
+}
+
+
+/* .py-5 {
+    padding-top: 4rem !important;
+    padding-bottom: 4rem !important;
+} */
+
+
+/* ----------------------------------------------------------------------------------- */
+/* Partners  */
+
+.partners-section p {
+    font-size: 20px;
+    font-weight: 400;
+    color: #000;
+}
+
+
+/* Features */
+
+.features-section p {
+    font-size: 15px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+
+
+/* Team */
+.team-card {
+    padding: 20px;
+    box-shadow: 3px 4px 12px 1px rgba(0,0,0,0.25);
+    border-radius: 8px;
+    background: #fff;
+    transition: transform 0.3s ease;
+}
+
+.team-card:hover {
+    transform: translateY(-5px);
+}
+
+.team-img {
+    width: 175px;
+    height: 175px;
+    border: 2px solid #000;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.team-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.team-card h4 {
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.team-card p {
+    font-size: 14px;
+    color: var(--text-dark);
+    margin-bottom: 0;
+}
+
+/* Button Styles */
+
+.btn-dark {
+    font-family: "Work Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 12px 40px;
+    border-radius: 5px;
+    background-color: #000;
+    border: 2px solid #000;
+}
+
+.btn-dark:hover {
+    background-color: transparent;
+    color: #000;
+    border-color: #000;
+}
+
+
+
+.footer {
+    background-color: var(--brand-green);
+}
+
+.footer .text-light {
+    font-size: 16px;
+    font-weight: 400;
+    opacity: 0.9;
+}
+
+.footer img {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.3s ease;
+}
+
+.footer img:hover {
+    transform: scale(1.1);
+}
+
+
+/* -------------------------------------------------------------------------------------------------------- */
+/* Responsive */
+@media (max-width: 768px) {
+    .banner h1 {
+        font-size: 36px;
+    }
+    
+    .banner p {
+        font-size: 16px;
+    }
+    
+    h1, h2, h3 {
+        font-size: 32px;
+    }
+    
+    .team-img {
+        width: 150px;
+        height: 150px;
+    }
+}
+
+@media (max-width: 576px) {
+    .banner h1 {
+        font-size: 28px;
+    }
+    
+    h1, h2, h3 {
+        font-size: 24px;
+    }
+    
+    .team-img {
+        width: 120px;
+        height: 120px;
+    }
+    
+    .py-5 {
+        padding-top: 2rem !important;
+        padding-bottom: 2rem !important;
+    }
+}
