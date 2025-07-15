@@ -393,3 +393,395 @@ header{
 
 
 /* media Query  */
+
+@media screen and (max-width: 1212px) {
+    .container {
+        max-width: 900px;
+        padding: 0 24px;
+    }
+    
+    .navMain {
+        padding: 15px 20px;
+    }
+    
+    .navContent ul {
+        gap: 15px;
+        font-size: 18px;
+    }
+    
+    .homePage {
+        gap: 60px;
+    }
+    
+    .pageThree .pThree .pThreeCards {
+        gap: 80px;
+        margin-bottom: 50px;
+    }
+    
+    .reverse {
+        gap: 80px;
+        margin-bottom: 50px;
+    }
+    
+    .teamMember {
+        gap: 30px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .container {
+        max-width: 768px;
+        padding: 0 24px;
+    }
+    
+    .navMain {
+        padding: 15px 20px;
+    }
+    
+    .navContent ul {
+        gap: 15px;
+        font-size: 18px;
+    }
+    
+    .banner {
+        height: 90vh;
+        margin-bottom: 50px;
+        align-items: flex-start;
+    }
+    
+    .homePage {
+        flex-direction: column;
+        gap: 40px;
+        align-items: flex-start;
+    }
+    
+    .homeContent {
+        order: 2;
+    }
+    
+    .homeImg {
+        order: 1;
+    }
+    
+    .homeImg img {
+        max-width: 400px;
+        width: 100%;
+    }
+    
+    h1 {
+        font-size: 36px;
+    }
+    
+    h2, h3 {
+        font-size: 32px;
+    }
+    
+    .partnerImages {
+        flex-wrap: wrap;
+        gap: 30px;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .partnerImg {
+        flex: 0 1 calc(50% - 15px);
+        text-align: center;
+    }
+    
+    .pageThree .pThree .pThreeCards {
+        gap: 60px;
+        margin-bottom: 50px;
+    }
+    
+    .reverse {
+        gap: 60px;
+        margin-bottom: 50px;
+    }
+    
+    .pTImg img {
+        max-width: 300px;
+        width: 100%;
+    }
+    
+    .teamMember {
+        flex-wrap: wrap;
+        gap: 30px;
+        justify-content: center;
+    }
+    
+    .memberDetail {
+        flex: 0 1 calc(50% - 15px);
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    
+    .footerLogo {
+        flex-wrap: wrap;
+        gap: 15px;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        max-width: 100%;
+        padding: 0 16px;
+    }
+    
+    .navMain {
+        flex-direction: column;
+        gap: 20px;
+        padding: 15px;
+        text-align: center;
+    }
+    
+    .navContent ul {
+        gap: 20px;
+        font-size: 16px;
+        justify-content: center;
+    }
+    
+    .banner {
+        height: auto;
+        padding: 120px 0 60px;
+        margin-top: 0;
+        margin-bottom: 40px;
+    }
+    
+    .homePage {
+        flex-direction: column;
+        gap: 30px;
+        text-align: center;
+    }
+    
+    .homeContent {
+        order: 2;
+    }
+    
+    .homeImg {
+        order: 1;
+    }
+    
+    .homeImg img {
+        max-width: 280px;
+        width: 100%;
+    }
+    
+    h1 {
+        font-size: 28px;
+        line-height: 1.3;
+    }
+    
+    h2, h3 {
+        font-size: 24px;
+        line-height: 1.3;
+    }
+    
+    h4 {
+        font-size: 20px;
+    }
+    
+    .banner p {
+        font-size: 14px;
+        margin-bottom: 20px;
+    }
+    
+    .innerBanner a {
+        font-size: 16px;
+        padding: 8px 30px;
+    }
+    
+    .pageTwo {
+        margin-bottom: 50px;
+    }
+    
+    .pageTwo p {
+        font-size: 16px;
+        margin-bottom: 40px;
+    }
+    
+    .partnerImages {
+        flex-direction: column;
+        gap: 20px;
+        margin-bottom: 40px;
+    }
+    
+    .partnerImg {
+        text-align: center;
+    }
+    
+    .partnerImg img {
+        max-width: 120px;
+        width: 100%;
+    }
+    
+    .partners a {
+        padding: 8px 30px;
+        font-size: 16px;
+    }
+    
+    .pageThree {
+        margin-bottom: 60px;
+    }
+    
+    .pageThree .pThree .pThreeCards {
+        flex-direction: column;
+        gap: 30px;
+        margin-bottom: 40px;
+        text-align: center;
+    }
+    
+    .reverse {
+        flex-direction: column;
+        gap: 30px;
+        margin-bottom: 40px;
+    }
+    
+    .pTImg img {
+        max-width: 250px;
+        width: 100%;
+    }
+    
+    .pageThree p {
+        font-size: 14px;
+        margin-bottom: 15px;
+    }
+    
+    .pThree a {
+        padding: 8px 30px;
+        font-size: 16px;
+    }
+    
+    .teamPage {
+        margin-bottom: 40px;
+    }
+    
+    .ourTeam p {
+        font-size: 16px;
+    }
+    
+    .teamContent p {
+        margin-bottom: 30px;
+    }
+    
+    .teamMember {
+        flex-direction: column;
+        gap: 20px;
+        margin-bottom: 30px;
+        align-items: center;
+    }
+    
+    .memberDetail {
+        width: 100%;
+        max-width: 250px;
+        text-align: center;
+        margin-bottom: 20px;
+        padding: 20px;
+    }
+    
+    .memImg {
+        width: 150px;
+        height: 150px;
+        margin: 0 auto 15px;
+    }
+    
+    .viewBtn a {
+        padding: 8px 30px;
+        font-size: 16px;
+    }
+    
+    .footer {
+        padding: 30px 0;
+    }
+    
+    .footerContent {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+    
+    .footerLogo {
+        gap: 15px;
+        justify-content: center;
+    }
+    
+    .footerLogo img {
+        max-width: 30px;
+    }
+    
+    .footerText {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .container {
+        padding: 0 12px;
+    }
+    
+    .navContent ul {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .banner {
+        padding: 100px 0 40px;
+    }
+    
+    h1 {
+        font-size: 24px;
+    }
+    
+    h2, h3 {
+        font-size: 20px;
+    }
+    
+    .homeImg img {
+        max-width: 220px;
+    }
+    
+    .partnerImg img {
+        max-width: 100px;
+    }
+    
+    .pTImg img {
+        max-width: 200px;
+    }
+    
+    .memberDetail {
+        padding: 15px;
+    }
+    
+    .memImg {
+        width: 120px;
+        height: 120px;
+    }
+    
+    .footerLogo {
+        gap: 10px;
+    }
+    
+    .footerLogo img {
+        max-width: 25px;
+    }
+}
+
+.text-center-mobile {
+    text-align: left;
+}
+
+@media screen and (max-width: 768px) {
+    .text-center-mobile {
+        text-align: center;
+    }
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+body {
+    overflow-x: hidden;
+}

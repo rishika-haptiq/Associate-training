@@ -22,13 +22,6 @@ a {
 }
 
 
-
-/* Navbar */
-/* .navBar {
- width: 100%;
-} */
-
-
 .navHeader {
   padding:20px;
   display: flex;
@@ -45,12 +38,18 @@ a {
     color: #c9103b;
 }
 
-.navLink {
+.navLink li {
   font-weight: 500;
   font-size: 20px;
   display: flex;
- justify-content: end;
- gap: 20px;
+  /* justify-content: end; */
+  gap: 20px;
+
+}
+
+.navLink li a{
+  text-decoration: none;
+
 }
 
 .navLink a:hover {
@@ -244,9 +243,6 @@ footer {
   .container {
   max-width: 767px;
 }
-  /* .navContainer {
-    gap: 10px;
-  } */
 
   .navLink {
     gap: 10px;

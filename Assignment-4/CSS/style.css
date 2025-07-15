@@ -608,8 +608,8 @@ body {
   }
 }
 
-/* Tablet Devices (min-width: 769px) and (max-width: 1024px) */
-@media (min-width: 769px) and (max-width: 1024px) {
+/* Tablet Devices (min-width: 769px) and (max-width: 992px) */
+@media (min-width: 769px) and (max-width: 992px) {
 
   .navMain,
   .container,

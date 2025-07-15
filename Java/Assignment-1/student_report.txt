@@ -1,0 +1,16 @@
+Student Name: Krish
+CS: 70
+Math: 85
+English: 90
+Average: 81.67
+Max: 90, Min: 70
+Result: Pass
+--------------------------
+Student Name: Nirmiti
+hindi: 87
+math: 87
+biology: 78
+Average: 84.00
+Max: 87, Min: 78
+Result: Pass
+--------------------------

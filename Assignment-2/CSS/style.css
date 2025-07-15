@@ -16,8 +16,9 @@ a {
 }
 
 .mainContainer {
-  max-width: 1200px;
-  /* margin: 125px; */
+  /* max-width: 1200px; */
+  margin: 125px;
+
 
 }
 
@@ -232,41 +233,91 @@ footer {
   cursor: pointer;
 }
 
-/* Responsive */
-/* @media (max-width: 768px) {
-  .introSection {
+
+
+/* Responsive Design */
+@media (max-width: 767px) {
+  .navContainer {
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .navLink {
+    flex-direction: column;
+    gap: 10px;
+    font-size: 18px;
+  }
+
+  .mainContainer {
+    margin: 20px;
+  }
+
+
+  .introSection {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+
+  .introText {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .introText h1 {
+    font-size: 32px;
+  }
+
+  .introImage {
+    width: 200px;
+    height: 200px;
+  }
+
+  .recentPosts {
+    padding: 20px 10px;
   }
 
   .postsGrid {
     flex-direction: column;
   }
 
-  .navContainer {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .navLinks a {
-    margin-left: 0;
-    margin-right: 15px;
+  .postCard {
+    flex: 1 1 100%;
   }
 
   .workItem {
     flex-direction: column;
+    align-items: center;
   }
 
   .workItem img {
-    width: 100%;
+    width: 339px;
+    height: 230px;
   }
-} */
 
-/* if needed min. height - in the worst case */
-/* full space to the both cards */
+  .workContent {
+    align-content: flex-start;
+    padding: 10px 0;
+  }
+
+  .footerIcons {
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+}
 
 
+@media (max-width: 991px) {
+  .introSection {
+    flex-direction: column; /* Stack image above text */
+    align-items: center;
+  }
 
-
-/* banner -ve marginfeature 1 2 in same class 
-reverse class */
+  .introText {
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+  }
+}
