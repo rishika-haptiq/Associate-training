@@ -1,0 +1,18 @@
+Student Name: Aarav
+Math: 60
+Science: 65
+English: 80
+Average: 68.33
+Grade: C
+Max: 80, Min: 60
+Result: Pass
+----------------------------
+Student Name: xavier
+Math: 78
+Science: 60
+English: 70
+Average: 69.33
+Grade: C
+Max: 78, Min: 60
+Result: Pass
+----------------------------

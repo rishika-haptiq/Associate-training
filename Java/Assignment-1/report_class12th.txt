@@ -1,0 +1,9 @@
+Student Name: Shruti Kulkarni
+Accounts: 85
+BusinessStudies: 78
+Economics: 90
+Average: 84.33
+Grade: A
+Max: 90, Min: 78
+Result: Pass
+----------------------------
