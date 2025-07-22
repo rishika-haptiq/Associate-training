@@ -1,5 +1,4 @@
 import java.util.*;
-// import java.io.*;
 
 public class Student {
     String name;
@@ -76,32 +75,49 @@ public class Student {
     }
 
     public double getAverage() {
-        int total = Arrays.stream(marks).sum();
+        int total = 0;
+        for (int mark : marks) {
+            total += mark;
+        }
         return (double) total / marks.length;
     }
 
     public int getMax() {
-        return Arrays.stream(marks).max().orElse(0);
+        int max = marks[0];
+        for (int mark : marks) {
+            if (mark > max) max = mark;
+        }
+        return max;
     }
 
     public int getMin() {
-        return Arrays.stream(marks).min().orElse(0);
+        int min = marks[0];
+        for (int mark : marks) {
+            if (mark < min) min = mark;
+        }
+        return min;
     }
 
     public boolean isPass() {
-        return Arrays.stream(marks).allMatch(m -> m >= 40);
+        for (int mark : marks) {
+            if (mark < 40) return false;
+        }
+        return true;
     }
 
     public String getGrade() {
         double avg = getAverage();
-        return switch ((int) avg / 10) {
-            case 10, 9 -> "A+";
-            case 8 -> "A";
-            case 7 -> "B";
-            case 6 -> "C";
-            case 4, 5 -> "D";
-            default -> "F";
-        };
+        int gradeBucket = (int) avg / 10;
+        switch (gradeBucket) {
+            case 10:
+            case 9: return "A+";
+            case 8: return "A";
+            case 7: return "B";
+            case 6: return "C";
+            case 5:
+            case 4: return "D";
+            default: return "F";
+        }
     }
 
     public String getName() {
@@ -112,7 +128,9 @@ public class Student {
         return classLevel;
     }
 
-    public double getAvgMarks() {
+    public double getAvgMarks(){
         return getAverage();
     }
+
+
 }

@@ -1,7 +1,5 @@
-
 import java.util.*;
 import java.io.*;
-import java.util.stream.Collectors;
 
 public class StudentPerformanceApp {
     static final Map<String, String[]> classSubjects = Map.of(
@@ -14,7 +12,7 @@ public class StudentPerformanceApp {
         Scanner sc = new Scanner(System.in);
         List<Student> students = new ArrayList<>();
 
-        System.out.println("Hey Instructor ! \n");
+        System.out.println("Hey Instructor!\n");
         System.out.print("Enter your class (10th, 11th, or 12th): ");
         String classLevel = sc.nextLine();
         String[] subjects = classSubjects.getOrDefault(classLevel, null);
@@ -38,29 +36,32 @@ public class StudentPerformanceApp {
             sc.nextLine(); // consume newline
 
             switch (choice) {
-                case 1 -> {
+                case 1: {
                     System.out.print("Enter student name: ");
                     String name = sc.nextLine();
                     Student student = new Student(name, classLevel, subjects);
                     student.enterMarks(sc);
                     students.add(student);
                     System.out.println("Student added successfully.");
+                    break;
                 }
 
-                case 2 -> {
-                    List<Student> filtered = students.stream()
-                        .filter(s -> s.getClassLevel().equals(classLevel))
-                        .toList();
-
-                    if (filtered.isEmpty()) System.out.println("No data available.");
-                    else filtered.forEach(Student::printReport);
+                case 2: {
+                    boolean found = false;
+                    for (Student s : students) {
+                        if (s.getClassLevel().equals(classLevel)) {
+                            s.printReport();
+                            found = true;
+                        }
+                    }
+                    if (!found) System.out.println("No data available.");
+                    break;
                 }
 
-                case 3 -> {
+                case 3: {
                     System.out.print("Enter student name to search: ");
                     String query = sc.nextLine();
                     boolean found = false;
-
                     for (Student s : students) {
                         if (s.getClassLevel().equals(classLevel) &&
                             s.getName().equalsIgnoreCase(query)) {
@@ -70,22 +71,37 @@ public class StudentPerformanceApp {
                         }
                     }
                     if (!found) System.out.println("Student not found.");
+                    break;
                 }
 
-                case 4 -> {
-                    List<Student> filtered = students.stream()
-                        .filter(s -> s.getClassLevel().equals(classLevel))
-                        .sorted(Comparator.comparingDouble(Student::getAvgMarks).reversed())
-                        .toList();
+                case 4: {
+                    List<Student> filtered = new ArrayList<>();
+                    for (Student s : students) {
+                        if (s.getClassLevel().equals(classLevel)) {
+                            filtered.add(s);
+                        }
+                    }
 
-                    filtered.forEach(s -> System.out.printf("%s: %.2f (%s)\n",
-                        s.getName(), s.getAvgMarks(), s.getGrade()));
+                    Collections.sort(filtered, new Comparator<Student>() {
+                        public int compare(Student s1, Student s2) {
+                            return Double.compare(s2.getAvgMarks(), s1.getAvgMarks());
+                        }
+                    });
+
+                    for (Student s : filtered) {
+                        System.out.printf("%s: %.2f (%s)\n",
+                            s.getName(), s.getAvgMarks(), s.getGrade());
+                    }
+                    break;
                 }
 
-                case 5 -> {
-                    List<Student> filtered = students.stream()
-                        .filter(s -> s.getClassLevel().equals(classLevel))
-                        .toList();
+                case 5: {
+                    List<Student> filtered = new ArrayList<>();
+                    for (Student s : students) {
+                        if (s.getClassLevel().equals(classLevel)) {
+                            filtered.add(s);
+                        }
+                    }
 
                     if (filtered.isEmpty()) {
                         System.out.println("No data to save.");
@@ -100,24 +116,16 @@ public class StudentPerformanceApp {
                             System.out.println("Error writing file: " + e.getMessage());
                         }
                     }
+                    break;
                 }
 
-                case 6 -> {
-                    List<Student> filtered = students.stream()
-                        .filter(s -> s.getClassLevel().equals(classLevel))
-                        .toList();
-
-                    if (filtered.isEmpty()) {
-                        System.out.println("No students available.");
-                        break;
-                    }
-
+                case 6: {
                     System.out.print("Enter student name to edit: ");
                     String query = sc.nextLine();
                     boolean found = false;
-
-                    for (Student s : filtered) {
-                        if (s.getName().equalsIgnoreCase(query)) {
+                    for (Student s : students) {
+                        if (s.getClassLevel().equals(classLevel) &&
+                            s.getName().equalsIgnoreCase(query)) {
                             s.printReport();
                             s.editMarks(sc);
                             System.out.println("Marks updated.");
@@ -125,17 +133,18 @@ public class StudentPerformanceApp {
                             break;
                         }
                     }
-
                     if (!found) System.out.println("Student not found.");
+                    break;
                 }
 
-                case 7 -> {
+                case 7: {
                     System.out.println("Thank you, Instructor! Session ended.");
                     sc.close();
                     return;
                 }
 
-                default -> System.out.println("Invalid choice. Please try again.");
+                default:
+                    System.out.println("Invalid choice. Please try again.");
             }
         }
     }
