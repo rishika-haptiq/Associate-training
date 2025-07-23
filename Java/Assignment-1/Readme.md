@@ -8,7 +8,7 @@ sorting by average,
 editing marks, and 
 exporting reports.
 
---------------------
+---------------------
 The application is developed for the convinience of the Instructor considered as he wants it onlt for 10th 11th & 12th grade students, developer can further modify it as per the instructor's need.
 
 ---
@@ -57,3 +57,4 @@ Each report includes all students' data from that class with a breakdown of perf
 1. Compile the Java files:
    ```bash
    javac StudentPerformanceApp.java Student.java
+
