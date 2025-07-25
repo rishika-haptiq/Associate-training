@@ -1,0 +1,18 @@
+Student Name: Arav vyas
+Math: 78
+Science: 60
+English: 90
+Average: 76.00
+Grade: B
+Max: 90, Min: 60
+Result: Pass
+----------------------------
+Student Name: Aashi Gupta
+Math: 65
+Science: 80
+English: 87
+Average: 77.33
+Grade: B
+Max: 87, Min: 65
+Result: Pass
+----------------------------
