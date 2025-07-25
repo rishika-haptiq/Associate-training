@@ -1,9 +1,0 @@
-Student Name: Amit
-Physics: 67
-Chemistry: 98
-Math: 80
-Average: 81.67
-Grade: A
-Max: 98, Min: 67
-Result: Pass
-----------------------------
