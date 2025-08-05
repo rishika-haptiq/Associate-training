@@ -1,0 +1,12 @@
+package com.rishika.BlogHere;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
+public class BlogHereApplication {
+
+	public static void main(String[] args) {
+		SpringApplication.run(BlogHereApplication.class, args);
+	}
+}
