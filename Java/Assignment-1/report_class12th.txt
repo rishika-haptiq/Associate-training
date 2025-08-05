@@ -1,9 +1,0 @@
-Student Name: Kishu
-Accounts: 50
-BusinessStudies: 65
-Economics: 70
-Average: 61.67
-Grade: C
-Max: 70, Min: 50
-Result: Pass
-----------------------------
