@@ -1,0 +1,11 @@
+/home/rishikac/practice/java/BlogHere/src/main/java/com/rishika/BlogHere/BlogHereApplication.java
+/home/rishikac/practice/java/BlogHere/src/main/java/com/rishika/BlogHere/controller/PostController.java
+/home/rishikac/practice/java/BlogHere/src/main/java/com/rishika/BlogHere/controller/UserController.java
+/home/rishikac/practice/java/BlogHere/src/main/java/com/rishika/BlogHere/model/Comment.java
+/home/rishikac/practice/java/BlogHere/src/main/java/com/rishika/BlogHere/model/Post.java
+/home/rishikac/practice/java/BlogHere/src/main/java/com/rishika/BlogHere/model/User.java
+/home/rishikac/practice/java/BlogHere/src/main/java/com/rishika/BlogHere/repository/CommentRepo.java
+/home/rishikac/practice/java/BlogHere/src/main/java/com/rishika/BlogHere/repository/PostRepo.java
+/home/rishikac/practice/java/BlogHere/src/main/java/com/rishika/BlogHere/repository/UserRepo.java
+/home/rishikac/practice/java/BlogHere/src/main/java/com/rishika/BlogHere/services/PostServices.java
+/home/rishikac/practice/java/BlogHere/src/main/java/com/rishika/BlogHere/services/UserServices.java
